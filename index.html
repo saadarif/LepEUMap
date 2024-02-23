@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insect Map</title>
+  <!-- Leaflet CSS -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""
+/>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>LepEU Sampling Locations</h1>
+  </header>
+  <div id="species-label"><h3>Pick species below, <font color="red">
+    red: collected </font>, 
+    <font color = "green">green: planned collection</font></h3>
+  </div>
+  <!-- Leaflet JavaScript -->
+  <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <div id="map"></div>
+    <div id="btn-container" class="container">
+        <div class="button-container">
+          <button>Aglais utricae</button>
+          <button>Anthocharis cardamines</button>
+        </div>
+        <div id="map"></div>
+      </div>
+      
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

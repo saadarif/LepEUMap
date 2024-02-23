@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  line-height: 1.6;
+  padding: 0 40px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.button-container button {
+    border: 1px #666 solid;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-style: italic;
+}
+  
+.button-container button:hover {
+    background-color: #45a049;
+}
+  
+#map {
+    height: 500px;
+    max-width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+/* change colour of default leaflet marker */
+img.planned { 
+    filter: hue-rotate(130deg); 
+}
+
+img.collected { 
+  filter: hue-rotate(240deg); 
+}
