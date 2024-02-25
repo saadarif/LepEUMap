@@ -21,6 +21,15 @@ function plotSpecies(e) {
   //add header for map
   const speciesLabel = document.getElementById("species-label");
   speciesLabel.innerHTML = `<h3>${genus + ' ' + species}</h3>`;
+
+  //highlight button
+  const speciesBtn =  document.querySelector(`button[species-key="${speciesToPlot}"]`);
+  speciesBtn.classList.add('selected');
+
+  setTimeout(() => {
+    speciesBtn.classList.remove('selected');
+  }, 100);
+
 }
 
 async function showCoordinates(insect) {
